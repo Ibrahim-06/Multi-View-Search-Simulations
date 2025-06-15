@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="06c1db">
+    <title>Project Algorithm</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="intro">
+      <h1>🚀 Project Algorithm 🚀</h1>
+      <br />
+      <h3>🚀 Ibrahim Mohamed 692300357 C3 🚀</h3>
+      <h3>🚀 Fatma ElZhraa Ashraf 692300422 C3 🚀</h3>
+      <h3>🚀 Marihan Gamal 692300427 C3 🚀</h3>
+    </div>
+
+    <div class="galaxy"></div>
+
+    <div class="main">
+      <div class="title">🌌 Treasure Hunt 🌌</div>
+      <div class="controls">
+        <input
+          type="text"
+          id="arrayInput"
+          placeholder="Enter numbers, e.g. 4,8,1"
+          oninput="updateArray()"
+        />
+        <input type="number" id="target" placeholder="Enter target number" />
+        <button onclick="bruteForceSearch()">Brute Force</button>
+        <button onclick="binarySearch()">Binary Search</button>
+      </div>
+      <div class="circle-container" id="arrayDisplay"></div>
+      <div class="output" id="output"></div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
